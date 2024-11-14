@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(173, 216, 230, 0.144);
+}
+
+.left {
+  width: 100%;
+  max-width: 500px;
+}
+
+.logo {
+  width: fit-content;
+}
+
+.intro h1 {
+  text-align: left;
+  font-weight: bolder;
+}
+
+.intro p {
+  text-align: left;
+  max-width: 400px;
+  color: gray;
+  font-family: Brown;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.right {
+  width: 100%;
+  padding: 2rem;
+  max-width: 650px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgb(207, 201, 201);
+  overflow: hidden;
+}
+
+.field-group {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.field-group:first-child {
+  margin-top: 0;
+}
+
+.field-group {
+  margin-top: 15px;
+}
+
+.field {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+
+input,
+select {
+  padding: 14px;
+  border: 1px solid rgb(222, 217, 217);
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  outline: 1px solid mediumspringgreen;
+}
+
+label {
+  font-weight: bolder;
+}
+
+.form-footer .submit-button {
+  background-color: turquoise;
+  color: #ffffff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.form-footer a {
+  text-decoration: underline;
+  color: turquoise;
+}
+
+.form-footer p {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.home-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.home-button {
+  background-color: #000000bd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 850px) {
+  .right {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    margin-bottom: 20px;
+  }
+  .right, .left {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .field-group {
+    flex-direction: column;
+  }
+}
